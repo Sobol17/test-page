@@ -1,0 +1,543 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.65rem/1.2 Circe, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.shirts__inner {
+  padding-top: 65px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.shirts__col {
+  text-align: center;
+}
+
+.shirts__col--second {
+  padding: 0 110px;
+}
+
+.shirts__example {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.example__cm {
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 10px;
+  background-color: #000;
+}
+
+.example__cm--right {
+  transform: rotate(45deg);
+  top: 3px;
+  right: 3px;
+}
+
+.example__cm--left {
+  transform: rotate(135deg);
+  top: 1px;
+  left: 3px;
+}
+
+.shirts__categories {
+  text-align: left;
+  font-size: 1.3rem;
+  color: #797979;
+  line-height: 1.6;
+  word-spacing: 14px;
+  display: none;
+}
+
+.shirts__categories-small {
+  text-align: left;
+  font-size: 1.3rem;
+  color: #797979;
+  line-height: 1.6;
+  word-spacing: 14px;
+  display: none;
+}
+
+.shirts__col__title {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: Circe, sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
+  padding-bottom: 21px;
+  padding-top: 50px;
+}
+
+.shirts__nav {
+  padding-bottom: 56px;
+  text-align: left;
+}
+
+.shirts__links {
+  text-decoration: none;
+  color: #006be5;
+  font-size: 1.3rem;
+  padding-right: 22px;
+}
+
+.shirts__price {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  color: #bfbebe;
+  padding-bottom: 22px;
+}
+
+.price__item--striked {
+  padding-right: 12px;
+  font-weight: normal;
+}
+
+.price__item {
+  color: #9a9b9b;
+  padding-right: 40px;
+}
+
+.price__item--promo {
+  font-weight: 600;
+  color: #131313;
+}
+
+.price__item--promo span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.price__instock {
+  background-color: #f4f4f4;
+  height: 66px;
+  width: 339px;
+  text-align: left;
+}
+
+.price__img__check {
+  padding-left: 22px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.price__img__delivery {
+  padding-left: 22px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
+.price__instock__text {
+  font-size: 1.3rem;
+  color: #131313;
+}
+
+.price__instock__text a {
+  color: #006be5;
+  text-decoration: none;
+}
+
+.price__buttons {
+  text-align: left;
+  display: flex;
+}
+
+.price__text {
+  padding-top: 43px;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+.price__details {
+  padding-top: 20px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  position: relative;
+  display: none;
+}
+
+.details__line {
+  position: absolute;
+  content: "";
+  width: 339px;
+  left: -15px;
+  height: 1px;
+  background-color: #efefef;
+}
+
+.details__text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.details__text::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  z-index: 1;
+  transform: rotate(135deg);
+}
+
+.shirt__big {
+  max-width: 242px;
+  margin: 0 auto;
+}
+
+.price__share {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.share__text {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.share__links {
+  border: 2px solid #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.share__links:hover {
+  background-color: #efefef;
+  transition: background-color 0.2s linear;
+}
+
+.share-vk {
+  padding: 4px 10px;
+  margin-left: 23px;
+}
+
+.share-google {
+  padding: 4px 7px;
+}
+
+.share-fb {
+  padding: 4px 11px;
+}
+
+.share-tw {
+  padding: 4px 8px;
+  margin-right: 13px;
+}
+
+.price__count {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background-color: #efefef;
+  vertical-align: top;
+}
+
+.price__count p {
+  text-align: center;
+  line-height: 2.4;
+  font-size: 1.3rem;
+}
+
+.price__count::before {
+  position: absolute;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: #efefef;
+}
+
+.mobile__send {
+  position: relative;
+  top: 5px;
+  left: 27px;
+  display: none;
+}
+
+.shirts__btn {
+  content: "";
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.shirts__btn:hover {
+  background-color: #efefef;
+  transition: background-color 0.2s linear;
+}
+
+.price__btn {
+  margin-top: 50px;
+  width: 240px;
+  height: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 0;
+  font-family: circe, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn__blue {
+  background-color: #006be5;
+  color: #fff;
+  margin-right: 23px;
+}
+
+.btn__blue:hover {
+  background-color: #035cc2;
+  transition: background-color 0.2s linear;
+}
+
+.btn__white {
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+}
+
+.btn__white:hover {
+  background-color: #ccc;
+  transition: background-color 0.2s linear;
+}
+
+.btn__mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .shirts__col--second {
+    padding-right: 60px;
+    padding-left: 30px;
+  }
+
+  .price__btn {
+    width: 165px;
+  }
+
+  .price__text {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shirts__example {
+    padding: 10px 0;
+  }
+
+  .shirts__categories {
+    display: block;
+  }
+
+  .shirts__col--second {
+    padding-right: 42px;
+    padding-left: 10px;
+  }
+
+  .shirts__price {
+    padding-bottom: 30px;
+  }
+
+  .shirts__col__title {
+    padding-top: 25px;
+  }
+
+  .price__item {
+    font-weight: 600;
+  }
+
+  .shirts__nav {
+    max-width: 352px;
+    padding-bottom: 25px;
+  }
+
+  .price__item {
+    padding-bottom: 18px;
+  }
+
+  .price__item--striked {
+    padding-bottom: 18px;
+  }
+
+  .price__item--promo {
+    width: 100%;
+  }
+
+  .price__instock {
+    width: 289px;
+  }
+
+  .shirts__btn {
+    margin-top: 10px;
+  }
+
+  .price__btn {
+    width: 140px;
+    margin-top: 30px;
+  }
+
+  .btn__blue {
+    margin-right: 10px;
+  }
+
+  .share__text {
+    display: none;
+  }
+
+  .share-vk {
+    margin-left: 0px;
+  }
+
+  .price__text {
+    padding-top: 28px;
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 320px) {
+  .shirts__col--first {
+    display: none;
+  }
+
+  .shirts__inner {
+    flex-wrap: wrap;
+  }
+
+  .shirts__col {
+    width: 100%;
+  }
+
+  .shirts__col--second {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .shirts__col__title {
+    display: none;
+  }
+
+  .shirts__categories {
+    display: none;
+  }
+
+  .shirts__categories-small {
+    display: block;
+    line-height: 2.4;
+    word-spacing: 5px;
+    text-align: center;
+  }
+
+  .shirts__nav {
+    padding-bottom: 23px;
+  }
+
+  .shirts__price {
+    padding-bottom: 24px;
+  }
+
+  .price__item--striked {
+    padding-bottom: 13px;
+  }
+
+  .price__item {
+    padding-bottom: 13px;
+  }
+
+  .price__instock {
+    width: 339px;
+    margin-left: -15px;
+  }
+
+  .price__buttons {
+    display: none;
+  }
+
+  .price__text {
+    padding-top: 23px;
+    max-width: 100%;
+  }
+
+  .price__share {
+    display: none;
+  }
+
+  .price__details {
+    display: block;
+  }
+
+  .price__btn {
+    width: 290px;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 19px;
+    padding: 0;
+  }
+
+  .btn__white {
+    width: 240px;
+    margin-left: -30px;
+  }
+
+  .btn__mobile {
+    display: inline;
+  }
+
+  .mobile__send {
+    display: inline;
+  }
+}
